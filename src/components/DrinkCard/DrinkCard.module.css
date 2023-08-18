@@ -1,0 +1,78 @@
+.drink__card {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+
+  border-radius: var(--gap-small);
+  overflow: hidden;
+
+  color: var(--text-color);
+
+  transition: all 0.4s;
+  filter: grayscale(1);
+
+  box-shadow: rgba(100, 100, 200, 0.15) 0px 6px 12px -2px, rgba(255, 255, 255, 0.2) 0px 3px 7px -3px;
+}
+
+.drink__card:hover {
+  filter: grayscale(0);
+}
+
+.drink__card:hover .drink__card__info {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.10);
+  border-top: 1px solid rgba(255, 255, 255, 0.40);
+  bottom: 0;
+}
+
+.drink__card__image {
+  width: 100%;
+  height: 100%;
+
+  transition: 0.4s;
+}
+
+.drink__card__info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-plus);
+  bottom: var(--gap-plus);
+  left: 0;
+  right: 0;
+
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.drink__card__info span {
+  font-family: var(--font-josefin);
+  font-size: var(--size-big);
+  font-weight: 700;
+}
+
+.drink__card__info a {
+  font-family: var(--font-josefin);
+  padding: 0.5rem 1.5rem;
+  border: 1px solid transparent;
+}
+
+.drink__card__info a:hover {
+  font-weight: 600;
+
+  background: var(--text-color);
+  color: var(--background-color);
+}
+
+.drink__card:hover .drink__card__info a {
+  border: 1px solid var(--text-color);
+}
