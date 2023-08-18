@@ -1,0 +1,13 @@
+.link a {
+  font-size: var(--size-regular);
+  font-family: var(--font-josefin);
+  text-transform: uppercase;
+  
+  transition: all 0.4s;
+  color: var(--text-color);
+}
+
+.link.active a {
+  color: var(--text-wine-color);
+  font-weight: 600;
+}
