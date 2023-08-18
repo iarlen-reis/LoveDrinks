@@ -1,3 +1,4 @@
+import Header from '@/components/Header'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Josefin_Sans as JosefinSans, Roboto } from 'next/font/google'
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${josefin.variable} ${roboto.variable}`}>
+        <Header />
         {children}
       </body>
     </html>
