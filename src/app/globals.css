@@ -10,12 +10,30 @@ body {
   background: var(--background-color);
 }
 
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.2rem 1rem;
+}
+
 :root {
   --background-color: #111;
   --background-color-light: rgba(1, 1, 1, 10);
   --text-color: #fafafa;
   --text-link-color: #1ABC9C;
+  --text-wine-color: #902323;
 
+
+  --size-super: 1.8rem;
   --size-big-plus: 1.5rem;
   --size-big: 1.25rem;
   --size-regular: 1rem;
