@@ -8,6 +8,8 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   font-family: var(--font-roboto);
   background: var(--background-color);
+
+  scroll-behavior: smooth;
 }
 
 a {
