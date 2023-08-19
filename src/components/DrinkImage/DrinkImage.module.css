@@ -1,0 +1,14 @@
+.drink__image {
+  max-width: 500px;
+  width: 100%;
+
+  border-radius: var(--size-small-plus);
+  overflow: hidden;
+}
+
+.drink__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-position: center center;
+}
