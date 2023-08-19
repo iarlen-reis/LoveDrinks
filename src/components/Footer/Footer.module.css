@@ -1,0 +1,25 @@
+.footer  {
+  width: 100%;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--background-color);
+}
+
+.footer__container {
+  text-align: end;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1.2rem 1rem;
+  margin: 0 auto;
+}
+
+.footer__container a {
+  font-family: var(--font-josefin);
+
+  transition: all 0.4s;
+  color: var(--text-color);
+}
+
+.footer__container a:hover {
+  color: var(--text-wine-color);
+}
