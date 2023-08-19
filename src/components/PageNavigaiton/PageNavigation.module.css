@@ -1,0 +1,28 @@
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-small);
+}
+
+.navigation li {
+  font-size: var(--size-small);
+  font-family: var(--font-josefin);
+
+  color: var(--text-color);
+
+  transition: all 0.4s;
+}
+
+.navigation li:nth-child(3) {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.navigation li a {
+  transition: all 0.4s;
+}
+
+.navigation li a:hover {
+  color: var(--text-wine-color);
+}
