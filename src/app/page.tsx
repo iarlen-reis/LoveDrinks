@@ -9,7 +9,7 @@ export default async function Home() {
       <div className={styles.information__container}>
         <div className={styles.home__apresentation}>
           <h1>I love Drinks</h1>
-          <p>Seu drink favorito se encontra aqui!</p>
+          <p>Your favorite drink is here!</p>
         </div>
         <Search />
       </div>

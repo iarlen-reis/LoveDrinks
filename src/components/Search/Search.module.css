@@ -8,11 +8,16 @@
   height: fit-content;
 }
 
+.form:hover input {
+  opacity: 1;
+}
+
 .form input {
   width: 100%;
   padding: 1rem;
   
   font-size: var(--size-regular);
+  font-weight: 600;
   
   outline: none;
   border: 1px solid var(--gap-small);

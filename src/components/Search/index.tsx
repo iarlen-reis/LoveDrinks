@@ -16,6 +16,8 @@ const Search = () => {
   } = useForm<IFormProps>()
 
   const handleSearch = (data: IFormProps) => {
+    if (!data.search.trim()) return
+
     router.push(`/search?q=${data.search}`)
   }
 
@@ -23,7 +25,8 @@ const Search = () => {
     <form onSubmit={handleSubmit(handleSearch)} className={styles.form}>
       <input
         type="text"
-        placeholder="Encontrar drinks"
+        placeholder="Find drinks..."
+        autoComplete="off"
         {...register('search', {
           required: true,
         })}

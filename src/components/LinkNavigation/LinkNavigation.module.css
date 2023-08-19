@@ -7,6 +7,10 @@
   color: var(--text-color);
 }
 
+.link a:hover {
+  color: var(--text-wine-color);
+}
+
 .link.active a {
   color: var(--text-wine-color);
   font-weight: 600;
