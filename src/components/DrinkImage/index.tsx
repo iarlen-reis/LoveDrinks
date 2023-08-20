@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image'
 import styles from './DrinkImage.module.css'
+import { Zoom } from 'react-awesome-reveal'
 
 interface IDrinkImageProps {
   src: string
@@ -7,9 +9,11 @@ interface IDrinkImageProps {
 }
 const DrinkImage = ({ src, alt }: IDrinkImageProps) => {
   return (
-    <div className={styles.drink__image}>
-      <Image src={src} alt={alt} width={600} height={400} />
-    </div>
+    <Zoom direction="up" triggerOnce duration={1000}>
+      <div className={styles.drink__image}>
+        <Image src={src} alt={alt} width={600} height={400} />
+      </div>
+    </Zoom>
   )
 }
 
