@@ -16,9 +16,7 @@ const renderDrinkIngredients = () => {
 
 describe('DrinkIngredients component', () => {
   it('should render DrinkIngredients component', () => {
-    const { debug } = renderDrinkIngredients()
-
-    debug()
+    renderDrinkIngredients()
   })
 
   it('should have a h2 with text <Ingredients>', () => {
