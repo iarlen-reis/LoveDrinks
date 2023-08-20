@@ -1,0 +1,27 @@
+.home__apresentation {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small);
+  text-align: center;
+
+  color: var(--text-color);
+}
+
+.home__apresentation h1 {
+  font-family: var(--font-josefin);
+  font-size: var(--size-super);
+}
+
+.home__apresentation p {
+  font-size: var(--size-small);
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+
+@media (min-width: 768px) {
+  .home__apresentation {
+    text-align: start;
+  }
+}
+
