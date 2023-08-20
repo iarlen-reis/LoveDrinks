@@ -1,8 +1,10 @@
 'use client'
+
 import { SearchIcon } from 'lucide-react'
 import styles from './Search.module.css'
 import { useForm } from 'react-hook-form'
 import { useRouter } from 'next/navigation'
+import { Fade } from 'react-awesome-reveal'
 
 interface IFormProps {
   search: string
@@ -22,21 +24,22 @@ const Search = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(handleSearch)} className={styles.form}>
-      <input
-        type="text"
-        placeholder="Find drinks..."
-        autoComplete="off"
-        {...register('search', {
-          required: true,
-        })}
-        aria-errormessage="search"
-      />
-      <button>
-        <SearchIcon />
-      </button>
-      <span>{errors.search && 'Campo obrigatório.'}</span>
-    </form>
+    <Fade direction="right" delay={100} triggerOnce>
+      <form onSubmit={handleSubmit(handleSearch)} className={styles.form}>
+        <input
+          type="text"
+          placeholder="Find drinks..."
+          autoComplete="off"
+          {...register('search', {
+            required: true,
+          })}
+        />
+        <button type="submit">
+          <SearchIcon role="img" />
+        </button>
+        <span>{errors.search && 'Campo obrigatório.'}</span>
+      </form>
+    </Fade>
   )
 }
 
