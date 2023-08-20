@@ -1,5 +1,7 @@
+'use client'
 import { DotIcon, ShoppingBasketIcon } from 'lucide-react'
 import styles from './DrinkIngredients.module.css'
+import { Fade } from 'react-awesome-reveal'
 
 interface IDrinkIngredientsProps {
   ingredient1: string
@@ -15,36 +17,40 @@ const DrinkIngredients = ({
 }: IDrinkIngredientsProps) => {
   return (
     <div className={styles.drink__ingredients}>
-      <h2>
-        Ingredients
-        <ShoppingBasketIcon />
-      </h2>
-      <ul>
-        {ingredient1 && (
-          <li>
-            <DotIcon />
-            {ingredient1}
-          </li>
-        )}
-        {ingredient2 && (
-          <li>
-            <DotIcon />
-            {ingredient2}
-          </li>
-        )}
-        {ingredient3 && (
-          <li>
-            <DotIcon />
-            {ingredient3}
-          </li>
-        )}
-        {ingredient4 && (
-          <li>
-            <DotIcon />
-            {ingredient4}
-          </li>
-        )}
-      </ul>
+      <Fade direction="left" triggerOnce>
+        <h2>
+          Ingredients
+          <ShoppingBasketIcon />
+        </h2>
+      </Fade>
+      <Fade direction="up" cascade triggerOnce>
+        <ul>
+          {ingredient1 && (
+            <li>
+              <DotIcon />
+              {ingredient1}
+            </li>
+          )}
+          {ingredient2 && (
+            <li>
+              <DotIcon />
+              {ingredient2}
+            </li>
+          )}
+          {ingredient3 && (
+            <li>
+              <DotIcon />
+              {ingredient3}
+            </li>
+          )}
+          {ingredient4 && (
+            <li>
+              <DotIcon />
+              {ingredient4}
+            </li>
+          )}
+        </ul>
+      </Fade>
     </div>
   )
 }
