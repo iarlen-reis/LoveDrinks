@@ -1,0 +1,22 @@
+.search__info {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--gap-plus);
+}
+
+.search__info h1 {
+  font-family: var(--font-josefin);
+  font-size: var(--size-big);
+
+  color: var(--text-color);
+
+  margin-top: var(--gap-plus);
+}
+
+@media (min-width: 640px) {
+  .search__info h1 {
+    font-size: var(--size-big-plus);
+  }
+
+}

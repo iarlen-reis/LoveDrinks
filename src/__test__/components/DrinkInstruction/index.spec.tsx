@@ -2,7 +2,6 @@ import { render } from '@testing-library/react'
 import DrinkInstruction from '@/components/DrinkInstruction'
 import '@testing-library/jest-dom'
 import 'intersection-observer'
-import { it } from 'node:test'
 
 const renderDrinkInstruction = () => {
   return render(<DrinkInstruction instruction="Descrição da bebida" />)
