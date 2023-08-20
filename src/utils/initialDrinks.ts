@@ -18,10 +18,10 @@ export const initialDrinks = [
       'https://www.thecocktaildb.com/images/media/drink/utypqq1441554367.jpg',
   },
   {
-    idDrink: '12418',
-    strDrink: 'Turf Cocktail',
+    idDrink: '11416',
+    strDrink: 'Gin Smash',
     strDrinkThumb:
-      'https://www.thecocktaildb.com/images/media/drink/utypqq1441554367.jpg',
+      'https://www.thecocktaildb.com/images/media/drink/iprva61606768774.jpg',
   },
   {
     idDrink: '12782',

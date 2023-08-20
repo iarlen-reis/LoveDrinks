@@ -1,8 +1,7 @@
-import Header from '@/components/Header'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Josefin_Sans as JosefinSans, Roboto } from 'next/font/google'
-import Footer from '@/components/Footer'
+import Providers from '@/components/Providers'
 
 const josefin = JosefinSans({
   subsets: ['latin'],
@@ -29,9 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${josefin.variable} ${roboto.variable}`}>
-        <Header />
-        <main className="container">{children}</main>
-        <Footer />
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
