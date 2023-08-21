@@ -99,9 +99,7 @@ describe('Search page', () => {
 
 describe('Search page empty', () => {
   it('should render Search page empty', async () => {
-    const { debug } = await renderSearchEmpty()
-
-    debug()
+    await renderSearchEmpty()
   })
 
   it('should have a link with href </> and text <Página inicial>', async () => {

@@ -50,9 +50,7 @@ const renderDrink = async () => {
 
 describe('Drink page', () => {
   it('should render Drink page', async () => {
-    const { debug } = await renderDrink()
-
-    debug()
+    await renderDrink()
   })
 
   it('should have a link with href </> and text <Página inicial>', async () => {
