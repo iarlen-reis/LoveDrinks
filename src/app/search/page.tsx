@@ -1,9 +1,9 @@
-import DrinkCard from '@/components/DrinkCard'
 import styles from './Search.module.css'
 import { api } from '@/utils/axios'
 import NotFoundDrink from '/public/mojito.png'
 import Image from 'next/image'
-import PageNavigation from '@/components/PageNavigaiton'
+import DrinkSearchInfo from '@/components/DrinkSearchInfo'
+import DrinkCardsGrid from '@/components/DrinkCardsGrid'
 
 interface IParams {
   searchParams: {
@@ -28,21 +28,8 @@ const Search = async (params: IParams) => {
 
   return (
     <div className={styles.search}>
-      <div className={styles.search__info}>
-        <PageNavigation to="/" label={params.searchParams.q} />
-        <h1>Resultados para: {params.searchParams.q}</h1>
-      </div>
-      <div className={styles.search__cards}>
-        {data.drinks &&
-          data.drinks.map((drink) => (
-            <DrinkCard
-              key={drink.idDrink}
-              idDrink={drink.idDrink}
-              strDrinkThumb={drink.strDrinkThumb}
-              strDrink={drink.strDrink}
-            />
-          ))}
-      </div>
+      <DrinkSearchInfo label={params.searchParams.q} />
+      <div>{data.drinks && <DrinkCardsGrid drinks={data.drinks} />}</div>
       {!data.drinks && (
         <div className={styles.not__result}>
           <h1>Nenhum resultado encontrado</h1>
